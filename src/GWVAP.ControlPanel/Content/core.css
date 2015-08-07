@@ -1,0 +1,13 @@
+
+.providerList{
+    height: 50px;
+    width: 100%;
+}
+
+.providerList .provider{
+    height: 50px;
+    width: 33.3%;
+    font-size: medium;
+    color: #575757;
+}
+

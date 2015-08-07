@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="half_w half_left">
+    <div class="h_title">Assessment statistics</div>
+    <div id="container" style="min-width: 300px; height: 180px; margin: 0 auto"></div>
+</div>
+<div class="half_w half_right">
+    <div class="h_title">GVAP statistics</div>
+    <div class="stats">
+        <div class="today">
+            <h3>Today</h3>
+            <p class="count">2 349</p>
+            <p class="type">Assessments</p>
+            <p class="count">96</p>
+            <p class="type">Callbacks</p>
+            <p class="count">9</p>
+            <p class="type">Errors</p>
+        </div>
+        <div class="week">
+            <h3>Last week</h3>
+            <p class="count">12 931</p>
+            <p class="type">Assessments</p>
+            <p class="count">521</p>
+            <p class="type">Callbacks</p>
+            <p class="count">38</p>
+            <p class="type">Errors</p>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="full_w">
+    <div class="h_title">Provider Statistics</div>
+    <div class="providerList">
+        <ul id="flexiselDemo1">
+            <li><p class="provider">Talent See</p></li>
+            <li><p class="provider">Launchpad Recruits</p></li>
+        </ul>
+    </div>
+<script type="text/javascript">
+    $(window).load(function () {
+        $("#flexiselDemo1").flexisel({ visibleItems: 3 });
+    });
+</script>
+</div>
+
+<div class="full_w">
+    <div class="h_title">Statistics for - <b>Talent See</b></div>
+    <br>
+    <div class="half_w half_left">
+        <div class="h_title">Statistics for last 6 months</div>
+        <div id="container1" style="min-width: 300px; height: 180px; margin: 0 auto"></div>
+    </div>
+    <div class="half_w half_right">
+        <div class="h_title">Processed Assessments for the last 6 months</div>
+        <div class="stats">
+            <div class="today">
+                <h3>Today</h3>
+                <p class="count">2 349</p>
+                <p class="type">Assessments</p>
+                <p class="count">96</p>
+                <p class="type">Callbacks</p>
+                <p class="count">9</p>
+                <p class="type">Errors</p>
+            </div>
+            <div class="week">
+                <h3>Last week</h3>
+                <p class="count">12 931</p>
+                <p class="type">Assessments</p>
+                <p class="count">521</p>
+                <p class="type">Callbacks</p>
+                <p class="count">38</p>
+                <p class="type">Errors</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>

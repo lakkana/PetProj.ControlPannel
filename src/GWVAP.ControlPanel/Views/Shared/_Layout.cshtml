@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    @*<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <title>GVAP Control Pannel</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <div class="wrap">
+        <div id="header">
+            <div id="top">
+                <div class="left">
+                    <p>Welcome, <strong>Super Admin</strong> [ <a href="">logout</a> ]</p>
+                </div>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li class="upp">
+                        <a href="#">Main control</a>
+                        <ul>
+                            <li>&#8250; <a href="">Statistics</a></li>
+                            <li>&#8250; <a href="">Manage Providers</a></li>
+                            <li>&#8250; <a href="">Manage Client Systems</a></li>
+                            <li>&#8250; <a href="">Manage Database</a></li>
+                            <li>&#8250; <a href="">Error Log</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div id="sidebar">
+                <div class="box">
+                    <div class="h_title">&#8250; Main control</div>
+                    <ul id="home">
+                        <li class="b2"><a class="icon report" href="">Statistics</a></li>
+                        <li class="b1"><a class="icon photo" href="">Manage Providers</a></li>
+                        <li class="b2"><a class="icon category" href="">Manage Client Systems</a></li>
+                        <li class="b2"><a class="icon config" href="">Manage Database</a></li>
+                        <li class="b2"><a class="icon config" href="">Error Log</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main">
+                @RenderBody()
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div id="footer">
+            <div class="left">
+                <p>GVAP Version 1.0</p>
+            </div>
+            <div class="right">
+                <p>GradWeb @DateTime.Now.Year All rights Reserved</p>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
